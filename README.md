@@ -54,6 +54,7 @@
     * 운전자들이 교통 상황을 명확히 인지하고 안전하게 주행할 수 있도록 도와줌으로써, 전체 교통 시스템에 대한 신뢰도를 향상시킬 수 있습니다.
 
 ## Project Schedule
+![Untitled(3)](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/7de8d088-a03b-4b25-94b8-8bc57c508ce6)
 
 ## High Level Design
 
