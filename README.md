@@ -16,9 +16,9 @@
 * Members
   | Name | Role |
   |----|----|
-  | 김승민 | Project lead, UI design  |
-  | 박민혁 | Project Manager, AI modeling    |
-  | 유지승 | AI modeling, Hardware Setup   |
+  | 김승민 | Project lead, Hardware Setup  |
+  | 박민혁 | UI design, AI modeling    |
+  | 유지승 | AI modeling, Project Manager   |
   | 조수환 | AI modeling, System integration |
   
 * Project Github : https://github.com/suhwanjo/Intel-Eged-AI-Project.git
