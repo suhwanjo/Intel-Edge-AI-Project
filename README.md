@@ -88,5 +88,6 @@
 5. HUD 디스플레이
 
 ### 시스템 구상도(초안)
-<img width="3312" alt="61bd9de8754a97ec" src="https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/de9bb3bc-f732-4824-a2c9-5a05cdd75c12">
+<img width="3312" alt="시스템구상도" src="https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/8e81bc01-c197-498b-bd54-dbe60f611aec">
+
 
