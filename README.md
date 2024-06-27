@@ -87,7 +87,10 @@
 4. 안전 판단
 5. HUD 디스플레이
 
-### 시스템 구상도
+### System Architecture
 ![Untitled (2)](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/5fe7b7f4-d99a-4adf-b7b0-26b116c604b4)
 
+### Sequence Diagram
+![Untitled diagram-2024-06-27-074524](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/e74dd8f8-3fd4-4c1a-b7d1-793404d92261)
 
+## Used AI Model
