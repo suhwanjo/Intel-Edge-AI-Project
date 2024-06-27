@@ -91,6 +91,6 @@
 ![Untitled (2)](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/5fe7b7f4-d99a-4adf-b7b0-26b116c604b4)
 
 ### Sequence Diagram
-![Untitled diagram-2024-06-27-074524](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/e74dd8f8-3fd4-4c1a-b7d1-793404d92261)
+![Untitled diagram-2024-06-27-081944](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/60a3c231-437b-4e59-98e1-0b75d344db51)
 
 ## Used AI Model
