@@ -87,7 +87,7 @@
 4. 안전 판단
 5. HUD 디스플레이
 
-### 시스템 구상도(초안)
+### 시스템 구상도
 ![Untitled (2)](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/5fe7b7f4-d99a-4adf-b7b0-26b116c604b4)
 
 
