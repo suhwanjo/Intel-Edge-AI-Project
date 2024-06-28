@@ -93,4 +93,7 @@
 ### Sequence Diagram
 ![Untitled diagram-2024-06-27-081944](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/60a3c231-437b-4e59-98e1-0b75d344db51)
 
+### Flow Chart
+![제목 없는 다이어그램 drawio (2)](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/21fce312-7848-4704-83c2-9907d5f1437d)
+
 ## Used AI Model
