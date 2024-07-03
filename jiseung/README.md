@@ -15,3 +15,20 @@
 ---
 * ai의 신호등 인식 향상을 위해 gamma보정 활용
   :inference.py
+  
+  
+## 6월 24일
+---
+* 메모리 용량 부분 최적화 코드
+    :model_integration_fixmemory.py
+
+| 모델 이름               | mAP   | time elapsed | epoch | f-measure | batch_size | learning_rate |
+|-------------------------|-------|--------------|-------|-----------|------------|---------------|
+| YOLOV8                  | 0.929 | -            | 120   | -         | -1         | -             |
+| YOLOX-TINY              | 0.936 | 0:51:15      | 32    | 0.928     | 8          | 0.0002        |
+| MobileNewV2-ATSS        | 0.920 | 0:57:30      | 24    | 0.900     | 8          | 0.004         |
+| YOLOx-TINY(다른 에폭)   | 0.936 | 1:19:55      | 50    | 0.916     | 8          | 0.0002        |
+| **Data_set 변경**       |**mAP**   | **time elapsed** | **epoch** | **f-measure** | **batch_size** | **learning_rate** |
+| YOLOV8                  | 0.967 | -            | -     | -         | -1         | -             |
+| YOLOX-TINY              | 0.948 | 4:10:19      | 11    | 0.924     | 8          | 0.0002        |
+| SSD                     | 0.926 | 1:57:44      | 63    | 0.908     | 8          | 0.01          |
