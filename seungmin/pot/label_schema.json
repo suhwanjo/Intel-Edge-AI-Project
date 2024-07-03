@@ -1,0 +1,51 @@
+{
+    "label_tree": {
+        "type": "tree",
+        "directed": true,
+        "nodes": [],
+        "edges": []
+    },
+    "label_groups": [
+        {
+            "_id": "6673d5eb7541b84215e41635",
+            "name": "labels",
+            "label_ids": [
+                "1",
+                "2"
+            ],
+            "relation_type": "EXCLUSIVE"
+        }
+    ],
+    "all_labels": {
+        "1": {
+            "_id": "1",
+            "name": "left_traffic_sign",
+            "color": {
+                "red": 97,
+                "green": 199,
+                "blue": 122,
+                "alpha": 255
+            },
+            "hotkey": "",
+            "domain": "DETECTION",
+            "creation_date": "2024-06-20T07:10:35.159000",
+            "is_empty": false,
+            "is_anomalous": false
+        },
+        "2": {
+            "_id": "2",
+            "name": "traffic_light",
+            "color": {
+                "red": 54,
+                "green": 97,
+                "blue": 216,
+                "alpha": 255
+            },
+            "hotkey": "",
+            "domain": "DETECTION",
+            "creation_date": "2024-06-20T07:10:35.159000",
+            "is_empty": false,
+            "is_anomalous": false
+        }
+    }
+}
