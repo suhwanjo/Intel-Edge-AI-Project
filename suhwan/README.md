@@ -94,3 +94,71 @@ scp -r <보낼경로> <사용자이름>@<IP>:<받을경로>
 ```
 - 첫 전송 시 yes
 - password 입력
+
+# 0620 OTX 모델 학습
+pot2
+├── confidence_threshold
+├── config.json
+├── label_schema.json
+├── openvino.bin
+├── openvino.xml
+├── ptq_performance.json
+
+## 모델
+
+**YOLOX-TINY**
+
+## 하이퍼파라미터
+
+```yaml
+learning_parameters:
+  batch_size:
+    default_value: 8
+    auto_hpo_state: POSSIBLE
+  inference_batch_size:
+    default_value: 8
+  learning_rate:
+    default_value: 0.0002
+    auto_hpo_state: POSSIBLE
+  learning_rate_warmup_iters:
+    default_value: 3
+  num_iters:
+    default_value: 200
+```
+## 성능 확인
+
+### 훈련 모드
+
+- Epoch: 32
+- Iteration: 491
+- Learning Rate: 0.0
+- Memory: 2545 MB
+- Current Iterations: 15711
+- Data Time: 0.03225 sec
+- Loss (Classification): 0.51633
+- Loss (Bounding Box): 1.80033
+- Loss (Objectness): 0.54884
+- Total Loss: 2.8655
+- Gradient Norm: 25.04388
+- Time per Iteration: 0.28366 sec
+
+### 검증 모드
+
+- Epoch: 32
+- Iteration: 47
+- Learning Rate: 0.0
+- AP50: 0.937
+- mAP: 0.93689
+- Current Iterations: 15712
+
+### 추가 성능 지표
+
+- F-measure: 0.9288256227758006
+
+### 총 경과 시간
+
+- Time Elapsed: 0:51:15.941332
+
+![performance_metrics](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/149c796d-6e35-4bc7-97a6-e50096e9f91c)
+
+
