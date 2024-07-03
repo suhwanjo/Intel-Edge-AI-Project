@@ -99,7 +99,7 @@ cp /opt/innorix-ex/ca.crt .
 ---
 
 # 0619 데이터 추출 및 검수
-sign_extract.py
+*sign_extract.py*
 - 압축 해제 후 ‘사각형’ ‘파란색’인 교통 표지판’만 추출하는 코드입니다.
     
 ## 파일 전송
@@ -182,27 +182,27 @@ learning_parameters:
 - Precision Compress to FP16
 
 ## 테스트 추론
-inference.py
+*inference.py*
 
 ![performance_metrics](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/149c796d-6e35-4bc7-97a6-e50096e9f91c)
 
 ---
 
 # 0623 신호등 신호 판단 알고리즘 개발
-inference_sign_light.py
+*inference_sign_light.py*
 - 신호등 객체를 4개의 segment로 분리한 후 평균 밝기를 계산합니다.
 ---
 
 # 0624 모델 통합 및 최적화
 ## 데스크탑에서의 테스트
 ### 블랙박스 영상(60s)
-model_integration.py
+*model_integration.py*
 - 모델을 통합합니다.(88s)
 
-test.py.py
+*test.py.py*
 - 멀티 스레딩을 추가합니다.(16s)
 
-test3.py
+*test3.py*
 - 하나의 스레드를 추가하고 최적화합니다.(7s)
 	1. 단순화된 구조
 	    - 함수 기반 설계로 코드가 간결하고 읽기 쉬움.
@@ -224,27 +224,27 @@ test3.py
 ## 온디바이스 -> 소켓 통신(서버-클라이언트)
 소켓 통신 테스트
 
-server.py
+*server.py*
 - 서버로, 라즈베리파이에서 실행됩니다.
 
-client.py
+*client.py*
 - 클라이언트로, 데스크탑이나 노트북에서 실행됩니다.
 ---
 
 # 0626 코드 클래스화&통신 추가
-main.py
+*main.py*
 
-traffic_sign_detection.py
+*traffic_sign_detection.py*
 - 신호등 및 비보호 좌회전 표지판 인식 및 처리 스레드입니다.
 
-vehicle_detection.py
+*vehicle_detection.py*
 - 차량 인식 및 거리 예측 스레드입니다.
 
-video_processor.py
+*video_processor.py*
 - 실시간 영상의 프레임 처리 스레드입니다.
 ---
 
 # 0627-0628 UI 개발
-qt.py
+*qt.py*
 - PyQT를 사용한 GUI입니다.
 
