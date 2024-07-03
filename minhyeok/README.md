@@ -5,7 +5,8 @@
   - [데이터 수정 및 추가](#데이터-수정-및-추가)
   - [모델 학습](#모델-학습)
   - [학습 결과](#학습-결과)
-
+- [06/23](#0623)
+  - [차량 감지 후, 거리 측정 알고리즘](#차량-감지-후-거리-측정-알고리즘)
 
 # 06/19
 ## 어노테이션 및 라벨링
@@ -26,57 +27,56 @@ OTX의 YOLOX-TINY 모델로 학습
 <img src="https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/96771644/e9751dc8-d62a-440a-9f66-74058d65ae34" width="500" height="300">
 
 ## 학습 결과
+
 ### 모델
-`YOLOX-TINY`
+*1차 데이터 - **YOLOX-TINY**, 2차 데이터 - **SSD***
 
 ### 하이퍼 파라미터
-```yaml
-learning_parameters:
-  batch_size:
-    default_value: 8
-    auto_hpo_state: POSSIBLE
-  inference_batch_size:
-    default_value: 8
-  learning_rate:
-    default_value: 0.0002
-    auto_hpo_state: POSSIBLE
-  learning_rate_warmup_iters:
-    default_value: 3
-  num_iters:
-    default_value: 200
-
-```
-
-### 성능확인
+| 속성                      | YOLOX-TINY | SSD   |
+|--------------------------|--------------|-----------|
+| batch_size               | 8            | 8         |
+| inference_batch_size     | 8            | 8         |
+| learning_rate            | 0.0002       | 0.01      |
+| learning_rate_warmup_iters| 3           | 3         |
+| num_iters                | 200          | 200       |
 
 #### 훈련 성능 (mode: train)
-| 항목                | 값           |
-| ------------------- | ------------ |
-| Epoch               | 50           |
-| Iteration           | 246          |
-| Learning Rate       | 0.0          |
-| Memory              | 4806         |
-| Current Iterations  | 12299        |
-| Data Time           | 0.00948      |
-| Loss (Class)        | 0.50077      |
-| Loss (BBox)         | 1.72361      |
-| Loss (Object)       | 0.53585      |
-| 총 Loss             | 2.76023      |
-| Gradient Norm       | 20.67017     |
-| Time                | 0.3692       |
-
-#### 검증 성능 (mode: val)
-| 항목                 | 값           |
-| ------------------   | ------------ |
-| Epoch                | 50           |
-| Iteration            | 47           |
-| Learning Rate        | 0.0          |
-| AP50                 | 0.937        |
-| mAP                  | 0.9367       |
-| Current Iterations   | 12300        |
+| 항목                | YOLOX-TINY | SSD   |
+| ------------------- | -----------| ------| 
+| Epoch               | 50         | 63    |
+| Iteration           | 246        | 634   |
+| Learning Rate       | 0.0        | 0.0   |
+| Memory              | 4806       | 3948  |
+| Current Iterations  | 12299      | 39941 |
+| Data Time           | 0.00948    | 0.00666 |
+| Loss (Class)        | 0.50077    | 0.89745 |
+| Loss (BBox)         | 1.72361    | 0.41344 |
+| Loss (Object)       | 0.53585    |      |
+| 총 Loss             | 2.76023    | 1.31089 |
+| Gradient Norm       | 20.67017   | 4.01689 |
+| Time                | 0.3692     | 0.17115 |
 
 #### F-Measure(정밀도와 재현율의 조화 평균)
-`f-measure: 0.9162516976007243`
+| 항목                           | YOLOX-TINY   | SSD           |
+| ----------------------------   | ------------ | ------------- |
+| F-Measure | 0.9143       | 0.9085        |
 
 #### 경과 시간
-`time elapsed: '1:19:55.974833'`
+| 항목                           | YOLOX-TINY   | SSD           |
+| ----------------------------   | ------------ | ------------- |
+| 경과 시간                      | 1:19:55.974  | 1:57:44.716   |
+
+# 06/23
+## 차량 감지 후, 거리 측정 알고리즘
+*test_depth2.py*<br><br>
+
+*특정 영역 설정 → 해당 영영에 있는 차량만 감지 → 감지된 차량 중에 y축이 가장 큰 객체만 depth 측정(**전체 프레임**에 대해서 depth 측정) → 값이 200 초과인 경우에 문구(임시) 출력*<br><br>
+
+*기존 코드 대비 **약 20% 시간 단축***
+
+----
+
+*test_depth3.py*<br><br>
+
+*특정 영역 설정 → 해당 영역에 있는 차량만 감지 → 감지된 차량 중에 y축이 가장 큰 객체만 depth 측정(**객체 상자 프레임**에 대해서만 depth 측정) → 값이 200 초과인 경우에 문구(임시) 출력*<br><br>
+*기존 코드 대비 **약 25% ~ 30% 시간 단축***
