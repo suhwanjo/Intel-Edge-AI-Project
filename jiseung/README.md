@@ -61,3 +61,10 @@
     서버
         -final_UI_short.py
 <깃허브에서 확인 가능>
+
+##6/29~7/1
+## 발표자료 수정 
+![Screenshot from 2024-07-03 13-42-06](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/163945374/dcd7b5a2-9f71-4be9-b392-4c14a5e5cc69)
+## 기능적 보안 및 시연 영상 촬영
+
+![Screenshot from 2024-07-03 13-43-09](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/163945374/305d3a94-ba75-4060-bdc8-19b60260ea8e)
