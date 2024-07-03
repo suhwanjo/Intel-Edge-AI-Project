@@ -161,4 +161,10 @@ learning_parameters:
 
 ![performance_metrics](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/149c796d-6e35-4bc7-97a6-e50096e9f91c)
 
+## 테스트 추론
+inference.py
+
+# 0623 신호등 신호 판단 알고리즘 개발
+inference_sign_light.py
+- 4개 segment 분리 후 평균 색상 계산
 
