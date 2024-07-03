@@ -45,3 +45,19 @@
     - UI 개발 → PyQT
     - 하드웨어 → 스피커, 버튼
     
+
+## 6/26~28 
+---
+* UI 개발, 라즈베리파이, 발표 자료 제작
+### UI 개발 및 수정
+
+- 좌회전 깜빡이 켰을 때만 데이터 수신
+- 완성 코드
+    클라이언트
+        -main.py
+        -traffic_sign_detection.py
+        -vehicle_detection.py
+        -vedio_processor.py
+    서버
+        -final_UI_short.py
+<깃허브에서 확인 가능>
