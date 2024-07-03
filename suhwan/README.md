@@ -198,3 +198,9 @@ server.py
 client.py
 - 소켓 통신 테스트
 
+# 0626 코드 클래스화&통신 추가
+main.py
+traffic_sign_detection.py
+vehicle_detection.py
+video_processor.py
+
