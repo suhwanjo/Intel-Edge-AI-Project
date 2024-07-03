@@ -13,12 +13,6 @@
 ---
 
 # 0618 AI Hub를 통한 데이터 수집
-
-## INNORIX EX Ubuntu 간단 사용 설명서
-
-### 패키지 설치
-[PDF 다운로드](https://www.aihub.or.kr/web-nas/aihub21/files/public/이노릭스%20다운로드/INNORIX-EX-Ubuntu
-# 0618 AI Hub를 통한 데이터 수집
 ## INNORIX EX Ubuntu 간단 사용 설명서
 
 ### 패키지 설치
@@ -117,13 +111,16 @@ scp -r <보낼경로> <사용자이름>@<IP>:<받을경로>
 ---
 
 # 0620 OTX 모델 학습
-pot2\
-├── confidence_threshold\
-├── config.json\
-├── label_schema.json\
-├── openvino.bin\
-├── openvino.xml\
-├── ptq_performance.json\
+```shell
+pot2
+├── confidence_threshold
+├── config.json
+├── label_schema.json
+├── openvino.bin
+├── openvino.xml
+├── ptq_performance.json
+```
+
 ## 모델
 
 **YOLOX-TINY**
@@ -179,10 +176,15 @@ learning_parameters:
 
 - Time Elapsed: 0:51:15.941332
 
-![performance_metrics](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/149c796d-6e35-4bc7-97a6-e50096e9f91c)
+### 최적화
+
+- Optimize with OpenVINO POT
+- Precision Compress to FP16
 
 ## 테스트 추론
 inference.py
+
+![performance_metrics](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/149c796d-6e35-4bc7-97a6-e50096e9f91c)
 
 ---
 
