@@ -1,0 +1,85 @@
+
+# 0618 AI Hub를 통한 데이터 수집
+## INNORIX EX Ubuntu 간단 사용 설명서
+
+### 패키지 설치
+[PDF 다운로드](https://www.aihub.or.kr/web-nas/aihub21/files/public/이노릭스%20다운로드/INNORIX-EX-Ubuntu%EC%9A%A9_%EA%B0%84%EB%8B%A8%20%EC%82%AC%EC%9A%A9%20%EC%84%A4%EB%AA%85%EC%84%9C_%EC%9B%B9%EA%B3%B5%EA%B0%9C%EC%9A%A9.pdf)
+
+- `sudo dpkg -i ./INNORIX-EX-Agent-x64.deb` 명령어 실행 시 OpenSSL 버전 오류가 발생하면 다음 단계를 따르세요:
+
+### 패키지 다운로드
+
+다른 미러 사이트를 사용하여 필요한 패키지를 다운로드합니다. 예를 들어:
+
+```bash
+wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+```
+
+### 다운로드한 패키지 설치
+
+패키지를 다운로드한 후 `dpkg`를 사용하여 설치합니다:
+
+```bash
+sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+```
+
+의존성 문제로 설치가 완료되지 않으면 다음 명령어를 실행하여 해결할 수 있습니다:
+
+```bash
+sudo apt-get install -f
+```
+
+## Mozilla 오류 해결
+
+새로운 오류 메시지가 Mozilla 관련 파일이 누락되었다고 할 경우, 다음 단계를 시도해 보세요:
+
+### 필수 패키지 설치
+
+Mozilla 라이브러리와 관련된 패키지를 설치합니다:
+
+```bash
+sudo apt-get update
+sudo apt-get install libmozjs-60-0 libnss3
+```
+
+### 의존성 문제 해결
+
+의존성 문제가 계속 발생하면 다음 명령어를 사용하여 모든 의존성 문제를 해결합니다:
+
+```bash
+sudo apt-get install -f
+```
+
+### 다시 실행 시도
+
+패키지를 설치한 후 다음 명령어를 사용하여 다시 실행해 보세요:
+
+```bash
+/opt/innorix-ex/innorixes start
+```
+
+### 로그 확인
+
+추가적인 문제가 발생하면 로그 파일을 확인합니다. 로그 파일은 `/var/log` 디렉토리 또는 프로그램의 특정 디렉토리에 있을 수 있습니다. 예를 들어:
+
+```bash
+cat /var/log/innorixes.log
+```
+
+문제가 계속 발생하면 구체적인 오류 메시지를 알려주시면 더 구체적인 도움을 드릴 수 있습니다.
+
+## 확인
+
+INNORIX가 정상적으로 실행 중인지 확인하려면 다음 명령어를 사용합니다:
+
+```bash
+netstat -antpl | grep innorix
+```
+
+## 브라우저 SSL 인증서
+
+브라우저 SSL 인증서를 복사하려면 다음 명령어를 사용합니다:
+
+```bash
+cp /opt/innorix-ex/ca.crt .
+```
