@@ -204,3 +204,6 @@ traffic_sign_detection.py
 vehicle_detection.py
 video_processor.py
 
+# 0627~0628 UI 개발
+qt.py
+
