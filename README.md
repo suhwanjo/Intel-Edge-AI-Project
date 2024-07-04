@@ -1,6 +1,17 @@
 # 이츠 유얼 턴
 비보호 좌회전 안전 보조 시스템, It's your turn!
 
+## Contents
+- [Outline](##Outline)
+- [Team](##Team)
+- [Motivation](##Motivation)
+- [Project Schedule](##Project-Schedule)
+- [Prerequisite](##Prerequisite)
+- [High Level Design](##High-Level-Design)
+- [Low Level Design](##Low-Level-Design)
+- [Used AI Model](##Used-AI-Model)
+- [Output](##Output)
+
 ## Outline
 프로젝트 주제: AI를 활용한 서비스 제작
 
@@ -8,10 +19,10 @@
 
 프로젝트 수행기간: 24/06/20 ~ 24/07/02
 
-* 라즈베리파이와 태블릿을 사용하여 비보호 좌회전 시 교통 안전을 보조하는 디지털 계기판 디스플레이 시스템의 프로토타입을 구현한다.
-* 이 시스템은 교통 표지판, 신호등을 인식하고, 반대 차선의 차량을 감지하여 안전한 좌회전을 돕는다.
+* 라즈베리파이와 태블릿을 사용하여 비보호 좌회전 시 교통 안전을 보조하는 디지털 계기판 디스플레이 시스템의 프로토타입을 구현합니다.
+* 이 시스템은 교통 표지판, 신호등을 인식하고, 반대 차선의 차량을 감지하여 안전한 좌회전을 돕습니다.
 
-## 팀 구성
+## Team
 
 * Members
   | Name | Role |
@@ -22,7 +33,7 @@
   | 조수환 | AI modeling, System integration |
   
 * Project Github : https://github.com/suhwanjo/Intel-Eged-AI-Project.git
-* 발표자료 : https://github.com/wodud6423/Intel-Edge-AI-/tree/main
+* 발표자료 : https://github.com/kccistc/intel-04/tree/main/doc/project/team_5
 
 ## Motivation
 ### 문제 정의
@@ -53,31 +64,53 @@
 ## Project Schedule
 ![plan](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/6662b3db-6ef7-4363-9631-36c73bb08e2f)
 
+## Prerequisite
+### Git Clone
+```shell
+https://github.com/suhwanjo/Intel-Edge-AI-Project.git
+```
+
+- Steps to run - Server
+- Steps to run - Client
+
 ## High Level Design
 
+### System Architecture
+![Untitled (2)](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/5fe7b7f4-d99a-4adf-b7b0-26b116c604b4)
+
+### Flow Chart
+![제목 없는 다이어그램 drawio (3)](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/2779a6e6-48e3-48e0-86a7-ea3c93a4362d)
+
+### Sequence Diagram
+![Untitled diagram-2024-06-27-081944](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/60a3c231-437b-4e59-98e1-0b75d344db51)
+
+### Class Diagram
+![image](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/71e4093d-f3ee-467c-9799-6e854169f130)
+
+## Low Level Design
 ### 기능 명세서
 
 #### 각 기능의 세부 요구사항
 
 1. **좌회전 인식**
-    - 방향 지시등 대체 스위치를 통해 좌회전 시작을 인지.
-    - 방향 지시등 신호가 입력되면 시스템 활성화.
+    - 방향 지시등 대체 스위치를 통해 좌회전 시작을 인지
+    - 방향 지시등 신호가 입력되면 시스템 활성화
 
 2. **교통 표지판 및 신호 인식**
-    - 비보호 좌회전 표지판 인식.
-    - 신호등 인식 및 신호 분석.
+    - 비보호 좌회전 표지판 인식
+    - 신호등 인식 및 신호 분석
 
 3. **반대 차선 차량 인식**
     - 반대 차선 차량 감지.
-    - 차량의 거리 측정 및 거리 추정.
+    - 차량의 거리 측정 및 거리 추정
 
 4. **안전 판단**
-    - 교통 표지판 정보 및 반대 차선 차량 정보를 종합하여 안전 여부 판단.
-    - 판단 결과를 실시간으로 HUD에 표시.
+    - 교통 표지판 정보 및 반대 차선 차량 정보를 종합하여 안전 여부 판단
+    - 판단 결과를 실시간으로 HUD에 표시
 
 5. **HUD 디스플레이**
-    - 태블릿을 통해 운전자가 쉽게 볼 수 있는 HUD 화면 구현.
-    - 안전 여부 및 관련 정보를 시각적으로 표시.
+    - 태블릿을 통해 운전자가 쉽게 볼 수 있는 HUD 화면 구현
+    - 안전 여부 및 관련 정보를 시각적으로 표시
 
 ### 기능별 우선순위
 
@@ -87,13 +120,62 @@
 4. 안전 판단
 5. HUD 디스플레이
 
-### System Architecture
-![Untitled (2)](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/5fe7b7f4-d99a-4adf-b7b0-26b116c604b4)
-
-### Sequence Diagram
-![Untitled diagram-2024-06-27-081944](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/60a3c231-437b-4e59-98e1-0b75d344db51)
-
-### Flow Chart
-![제목 없는 다이어그램 drawio (3)](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/2779a6e6-48e3-48e0-86a7-ea3c93a4362d)
-
 ## Used AI Model
+### 신호등&비보호 좌회전 표지판 감지
+1. backbone
+    - Custom_Object_Detection_YOLOX (otx 제공 pretrained model)
+
+2. data
+    - AI hub 데이터 : 1,703장
+    - 수집 방법 : AI hub 데이터 - 라벨링 데이터로 유사 표지판 추출 후 직접 검수
+3. Model 전이학습 과정
+    - Roboflow로 COCO 데이터셋 구축
+    - otx build
+    - train
+    - export half-precision
+    - optimize pot 
+    - deploy
+4. Model별 Training 결과
+    * 1차
+      | 모델 이름 | mAP | time elapsed | epoch | f-measure | batch_size | learning_rate |
+      | --- | --- | --- | --- | --- | --- | --- |
+      | YOLOV8 | 0.929 | - | 120 | - | -1 | - |
+      | YOLOX-TINY | 0.936 | 0:51:15 | 32 | 0.928 | 8 | 0.0002 |
+      | MobileNewV2-ATSS | 0.920 | 0:57:30 | 24 | 0.900 | 8 | 0.004 |
+      | YOLOx-TINY(다른 에폭) | 0.936 | 1:19:55 | 50 | 0.916 | 8 | 0.0002 |
+    * 2차
+      | 모델 이름 | mAP | time elapsed | epoch | f-measure | batch_size | learning_rate |
+      | --- | --- | --- | --- | --- | --- | --- |
+      | YOLOV8 | 0.967 | - | - | - | -1 | - |
+      | YOLOX-TINY | 0.948 | 4:10:19 | 11 | 0.924 | 8 | 0.0002 |
+      | SSD | 0.926 | 1:57:44 | 63 | 0.908 | 8 | 0.01 |
+      
+### 차량 감지
+- backbone
+    - vehicle-detection-0200
+### 거리 예측
+- backbone
+    - midasnet(monodepth)
+ 
+## Output
+### 비보호 좌회전 및 신호 인식 화면
+적색 신호 시
+
+![image](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/42b4ed33-851d-402b-ab08-1b3320392d97)
+
+청색 신호 시
+
+![image](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/81155ca6-d217-403e-8895-d6b85330524f)
+
+
+### 차량 및 거리 예측 화면
+거리 100 이상
+
+![image](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/b8416e31-650c-4e64-9f95-c234b4ec1ce3)
+
+거리 100 미만
+
+![image](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/9a5a212b-4fa0-4738-b838-e40d7a00a49e)
+
+### GUI
+![image](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/8c361c69-2cb9-4b37-b2f8-ba2b9f404148)
