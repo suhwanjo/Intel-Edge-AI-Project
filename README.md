@@ -81,12 +81,6 @@ https://github.com/suhwanjo/Intel-Edge-AI-Project.git
 ### Flow Chart
 ![제목 없는 다이어그램 drawio (3)](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/2779a6e6-48e3-48e0-86a7-ea3c93a4362d)
 
-### Sequence Diagram
-![Untitled diagram-2024-06-27-081944](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/60a3c231-437b-4e59-98e1-0b75d344db51)
-
-### Class Diagram
-![image](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/71e4093d-f3ee-467c-9799-6e854169f130)
-
 ## Low Level Design
 ### 기능 명세서
 
@@ -119,6 +113,12 @@ https://github.com/suhwanjo/Intel-Edge-AI-Project.git
 3. 반대 차선 차량 인식
 4. 안전 판단
 5. HUD 디스플레이
+
+### Sequence Diagram
+![Untitled diagram-2024-06-27-081944](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/60a3c231-437b-4e59-98e1-0b75d344db51)
+
+### Class Diagram
+![image](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/71e4093d-f3ee-467c-9799-6e854169f130)
 
 ## Used AI Model
 ### 신호등&비보호 좌회전 표지판 감지
