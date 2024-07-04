@@ -3,14 +3,14 @@
 
 ## Contents
 - [Outline](#Outline)
-- [Team](##Team)
-- [Motivation](##Motivation)
-- [Project Schedule](##Project-Schedule)
-- [Prerequisite](##Prerequisite)
-- [High Level Design](##High-Level-Design)
-- [Low Level Design](##Low-Level-Design)
-- [Used AI Model](##Used-AI-Model)
-- [Output](##Output)
+- [Team](#Team)
+- [Motivation](#Motivation)
+- [Project Schedule](#Project-Schedule)
+- [Prerequisite](#Prerequisite)
+- [High Level Design](#High-Level-Design)
+- [Low Level Design](#Low-Level-Design)
+- [Used AI Model](#Used-AI-Model)
+- [Output](#Output)
 
 ## Outline
 프로젝트 주제: AI를 활용한 서비스 제작
