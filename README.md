@@ -65,7 +65,7 @@
 ![plan](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/6662b3db-6ef7-4363-9631-36c73bb08e2f)
 
 ## Prerequisite
-### Git Clone
+### Clone Code
 ```shell
 https://github.com/suhwanjo/Intel-Edge-AI-Project.git
 ```
