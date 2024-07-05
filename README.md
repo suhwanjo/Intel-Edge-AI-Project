@@ -118,7 +118,7 @@ https://github.com/suhwanjo/Intel-Edge-AI-Project.git
 ![Untitled diagram-2024-06-27-081944](https://github.com/suhwanjo/Intel-Eged-AI-Project/assets/112834460/60a3c231-437b-4e59-98e1-0b75d344db51)
 
 ### Class Diagram
-![image](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/71e4093d-f3ee-467c-9799-6e854169f130)
+![image](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/ebba343d-e2e9-40f0-9908-7016d32c10e0)
 
 ## Used AI Model
 ### 신호등&비보호 좌회전 표지판 감지
