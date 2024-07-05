@@ -4,6 +4,7 @@
 ## Contents
 - [Outline](#Outline)
 - [Team](#Team)
+- [Stacks](#Stacks)
 - [Motivation](#Motivation)
 - [Project Schedule](#Project-Schedule)
 - [Prerequisite](#Prerequisite)
@@ -34,6 +35,10 @@
   
 * Project Github : https://github.com/suhwanjo/Intel-Eged-AI-Project.git
 * 발표자료 : https://github.com/kccistc/intel-04/tree/main/doc/project/team_5
+
+## Stacks
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"><img src="https://img.shields.io/badge/OpenVINO-412991?style=for-the-badge&logo=intel&logoColor=white"><img src="https://img.shields.io/badge/QT-41CD52?style=for-the-badge&logo=QT&logoColor=white"><img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=OpenCV&logoColor=white"><img src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=Numpy&logoColor=white">
+
 
 ## Motivation
 ### 문제 정의
