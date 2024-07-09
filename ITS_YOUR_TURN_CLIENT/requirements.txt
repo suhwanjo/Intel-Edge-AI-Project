@@ -1,0 +1,14 @@
+certifi==2024.6.2
+charset-normalizer==3.3.2
+defusedxml==0.7.1
+idna==3.7
+networkx==3.1
+numpy==1.23.4
+opencv-python==4.10.0.82
+openvino==2024.0.0
+openvino-dev==2024.0.0
+openvino-telemetry==2024.1.0
+packaging==24.1
+PyYAML==6.0.1
+requests==2.32.3
+urllib3==2.2.2
