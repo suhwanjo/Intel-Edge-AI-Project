@@ -9,7 +9,7 @@ source iyt_env/bin/activate
 (iyt_env) pip install -U pip
 (iyt_env) pip install -r requirements.txt
 ```
-video_path 수정
+video_path를 Server 장치의 실시간 영상 웹 서버 주소로 수정합니다.
 
 ## Steps to run
 ```shell
@@ -17,4 +17,4 @@ cd ./Intel-Edge-AI-Project/ITS_YOUR_TURN_CLIENT
 source iyt_env/bin/activate
 (iyt_env) python3 main.py
 ```
-Fill in your server device IP
+Server 장치의 IP를 입력합니다.
