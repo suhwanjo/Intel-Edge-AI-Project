@@ -85,8 +85,8 @@ Raspberry Pi 4(4GB), Web Cam, Buzzer, Raspberry Pi Touch Display(7”)
 https://github.com/suhwanjo/Intel-Edge-AI-Project.git
 ```
 #### *Server가 먼저 수행되어야 합니다.
-- Steps to run - Server
-- Steps to run - Client
+- [Steps to run - Server](https://github.com/suhwanjo/Intel-Edge-AI-Project/blob/main/ITS_YOUR_TURN_CLIENT/README.md)
+- [Steps to run - Client](https://github.com/suhwanjo/Intel-Edge-AI-Project/blob/main/ITS_YOUR_TURN_SERVER/README.md)
 
 ## High Level Design
 
