@@ -51,6 +51,7 @@ python -m venv iyt_env
 source iyt_env/bin/activate
 (iyt_env) pip install -U pip
 (iyt_env) pip install -r requirements.txt
+(iyt_env) chmod 0700 /run/user/1000
 ```
 
 ## Steps to run
