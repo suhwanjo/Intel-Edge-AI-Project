@@ -1,5 +1,7 @@
 # 이츠 유얼 턴
 비보호 좌회전 안전 보조 시스템, It's your turn!
+![image](https://github.com/user-attachments/assets/264d1ccb-edd8-4bf5-bda4-f581c762fa05)
+
 
 ## Contents
 - [Outline](#Outline)
@@ -84,9 +86,8 @@ Raspberry Pi 4(4GB), Web Cam, Buzzer, Raspberry Pi Touch Display(7”)
 ```shell
 https://github.com/suhwanjo/Intel-Edge-AI-Project.git
 ```
-#### *Server가 먼저 수행되어야 합니다.
-- [Steps to run - Server](https://github.com/suhwanjo/Intel-Edge-AI-Project/blob/main/ITS_YOUR_TURN_CLIENT/README.md)
-- [Steps to run - Client](https://github.com/suhwanjo/Intel-Edge-AI-Project/blob/main/ITS_YOUR_TURN_SERVER/README.md)
+- [Steps to run - Server](https://github.com/suhwanjo/Intel-Edge-AI-Project/blob/main/ITS_YOUR_TURN_SERVER/README.md)
+- [Steps to run - Client](https://github.com/suhwanjo/Intel-Edge-AI-Project/blob/main/ITS_YOUR_TURN_CLIENT/README.md)
 
 ## High Level Design
 
