@@ -47,6 +47,8 @@
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"><img src="https://img.shields.io/badge/OpenVINO-412991?style=for-the-badge&logo=intel&logoColor=white"><img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=OpenCV&logoColor=white"><img src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=Numpy&logoColor=white">
 
+<img src="https://img.shields.io/badge/Threading-013243?style=for-the-badge&logo=Threading&logoColor=white"><img src="https://img.shields.io/badge/Socket-013243?style=for-the-badge&logo=Socket&logoColor=white">
+
 ### Hardware
 
 Raspberry Pi 4(4GB), Web Cam, Buzzer, Raspberry Pi Touch Display(7”)
