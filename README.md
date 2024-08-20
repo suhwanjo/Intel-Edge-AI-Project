@@ -1,5 +1,9 @@
 # 이츠 유얼 턴
 비보호 좌회전 안전 보조 시스템, It's your turn!
+
+프로젝트 정리 Notion 링크 : https://www.notion.so/bd0689ee7531443caedd767db4489506?pvs=4   
+
+
 ![image](https://github.com/user-attachments/assets/264d1ccb-edd8-4bf5-bda4-f581c762fa05)
 
 
