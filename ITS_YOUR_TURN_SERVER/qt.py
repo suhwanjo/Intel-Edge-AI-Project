@@ -692,22 +692,8 @@ class ServerDashBoard(QMainWindow):
                     self.pwm.start(50.0)  # 소리 끄기
                     time.sleep(0.1)
                     self.pwm.stop()
-            #time.sleep(0.5)
-            #self.dash_board.dash_board_widget.dash_board_design_widget.set_horn_state(0)  # 경적 활성화
-            
-            
-            # 부저 주파수 설정 (depth_value에 비례)
-            #self.pwm.ChangeDutyCycle(50.0)  # 소리 켜기
                 else:
                     self.dash_board.dash_board_widget.dash_board_design_widget.set_break_state(1, 2)  # 브레이크 비활성화
-            
-            #if left_sign_detected:
-                    
-                #self.dash_board.dash_board_widget.dash_board_design_widget.set_horn_state(1)  # 경적 활성화
-            
-                #self.pwm.start(50.0)  # 소리 끄기
-                #time.sleep(0.3)
-                #self.pwm.stop()
             else:
                 self.dash_board.dash_board_widget.dash_board_design_widget.set_traffic_light_state(0)  # Red
             
