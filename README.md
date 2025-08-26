@@ -191,11 +191,11 @@ https://github.com/suhwanjo/Intel-Edge-AI-Project.git
 
 
 ### 차량 및 거리 예측 화면
-거리 100 이상
+거리 100 미만
 
 ![image](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/b8416e31-650c-4e64-9f95-c234b4ec1ce3)
 
-거리 100 미만
+거리 100 이상
 
 ![image](https://github.com/suhwanjo/Intel-Edge-AI-Project/assets/112834460/9a5a212b-4fa0-4738-b838-e40d7a00a49e)
 
